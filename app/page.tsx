@@ -8,14 +8,14 @@ export default function Home() {
     <div className="flex h-screen max-h-screen">
       {/* TODO: OTP Verification | PasskeyModal */}
 
-      <section className="remove-scrollbar container my-auto">
+      <section className="remove-scrollbar container my-6">
         <div className="sub-container max-w-[496px]">
           <Image
             src="/assets/icons/logo-full.svg"
             height={1000}
             width={1000}
             alt="patient"
-            className="mb-4 h-10 w-fit"
+            className="mb-8 h-10 w-fit"
           />
 
           <PatientForm />
