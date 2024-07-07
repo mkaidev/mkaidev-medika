@@ -13,13 +13,15 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
       <section className="remove-scrollbar container my-6">
         <div className="sub-container max-w-[496px]">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            height={1000}
-            width={1000}
-            alt="patient"
-            className="mb-8 h-10 w-fit"
-          />
+          <Link href="/" className="cursor-pointer">
+            <Image
+              src="/assets/icons/logo-full.svg"
+              height={1000}
+              width={1000}
+              alt="patient"
+              className="mb-8 h-10 w-fit"
+            />
+          </Link>
 
           <PatientForm />
 
