@@ -16,8 +16,8 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
               src="/assets/icons/logo-full.svg"
               height={1000}
               width={1000}
-              alt="patient"
-              className="mb-8 h-10 w-fit"
+              alt="logo"
+              className="mb-10 h-10 w-fit"
             />
           </Link>
 
@@ -27,7 +27,7 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
             type="create"
           />
 
-          <p className="copyright mt-3 py-12">© 2024 Mkaidev | medika</p>
+          <p className="copyright mt-10 py-10">© 2024 Mkaidev | medika</p>
         </div>
       </section>
 

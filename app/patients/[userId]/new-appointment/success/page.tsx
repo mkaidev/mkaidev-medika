@@ -14,7 +14,7 @@ const RequestSuccess = async ({
   const appointment = await getAppointment(appointmentId);
 
   const doctor = Doctors.find(
-    (doctor) => doctor.name === appointment.primaryPhysician,
+    (doctor) => doctor.name === appointment.primaryPhysician
   );
 
   return (
@@ -34,7 +34,7 @@ const RequestSuccess = async ({
           <Image
             src="/assets/gifs/success.gif"
             height={300}
-            width={280}
+            width={300}
             alt="success"
           />
           <h2 className="header mb-6 max-w-[600px] text-center">

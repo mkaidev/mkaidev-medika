@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { E164Number } from "libphonenumber-js/core";
 import Image from "next/image";
 import ReactDatePicker from "react-datepicker";
@@ -79,7 +80,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
       return (
         <FormControl>
           <PhoneInput
-            defaultCountry="US"
+            defaultCountry="ID"
             placeholder={props.placeholder}
             international
             withCountryCallingCode
@@ -120,7 +121,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
               selected={field.value}
               onChange={(date: Date) => field.onChange(date)}
               timeInputLabel="Time:"
-              dateFormat={props.dateFormat ?? "MM/dd/yyyy"}
+              dateFormat={props.dateFormat ?? "dd/MM/yyyy"}
               wrapperClassName="date-picker"
             />
           </FormControl>

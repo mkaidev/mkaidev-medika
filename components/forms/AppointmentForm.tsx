@@ -54,7 +54,7 @@ export const AppointmentForm = ({
   });
 
   const onSubmit = async (
-    values: z.infer<typeof AppointmentFormValidation>,
+    values: z.infer<typeof AppointmentFormValidation>
   ) => {
     setIsLoading(true);
 
@@ -87,7 +87,7 @@ export const AppointmentForm = ({
         if (newAppointment) {
           form.reset();
           router.push(
-            `/patients/${userId}/new-appointment/success?appointmentId=${newAppointment.$id}`,
+            `/patients/${userId}/new-appointment/success?appointmentId=${newAppointment.$id}`
           );
         }
       } else {
@@ -130,9 +130,9 @@ export const AppointmentForm = ({
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
         {type === "create" && (
-          <section className="mb-4 space-y-2">
+          <section className="mb-12 space-y-4">
             <h1 className="header">New Appointment</h1>
             <p className="text-dark-700">
               Request a new appointment in 10 seconds.
@@ -171,11 +171,13 @@ export const AppointmentForm = ({
               name="schedule"
               label="Expected appointment date"
               showTimeSelect
-              dateFormat="MM/dd/yyyy  -  h:mm aa"
+              dateFormat="dd/MM/yyyy  -  h:mm aa"
             />
 
             <div
-              className={`flex flex-col gap-6  ${type === "create" && "xl:flex-row"}`}
+              className={`flex flex-col gap-6  ${
+                type === "create" && "xl:flex-row"
+              }`}
             >
               <CustomFormField
                 fieldType={FormFieldType.TEXTAREA}
@@ -210,7 +212,9 @@ export const AppointmentForm = ({
 
         <SubmitButton
           isLoading={isLoading}
-          className={`${type === "cancel" ? "shad-danger-btn" : "shad-primary-btn"} w-full`}
+          className={`${
+            type === "cancel" ? "shad-danger-btn" : "shad-primary-btn"
+          } w-full`}
         >
           {buttonLabel}
         </SubmitButton>

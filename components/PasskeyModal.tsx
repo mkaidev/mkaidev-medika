@@ -42,6 +42,7 @@ export const PasskeyModal = () => {
       } else {
         setOpen(true);
       }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [encryptedKey]);
 
   const closeModal = () => {
@@ -50,7 +51,7 @@ export const PasskeyModal = () => {
   };
 
   const validatePasskey = (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.preventDefault();
 
