@@ -150,7 +150,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               fieldType={FormFieldType.DATE_PICKER}
               control={form.control}
               name="birthDate"
-              label="Date of birth"
+              label="Date of birth (dd/mm/yyyy)"
             />
 
             <CustomFormField
@@ -362,14 +362,14 @@ const RegisterForm = ({ user }: { user: User }) => {
             control={form.control}
             name="disclosureConsent"
             label="I consent to the use and disclosure of my health
-            information for treatment purposes."
+            information."
           />
 
           <CustomFormField
             fieldType={FormFieldType.CHECKBOX}
             control={form.control}
             name="privacyConsent"
-            label="I acknowledge that I have reviewed and agree to the
+            label="I acknowledge and agree to the
             privacy policy"
           />
         </section>
